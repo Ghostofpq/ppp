@@ -115,9 +115,10 @@ GameObject:
   - 114: {fileID: 428526003}
   - 95: {fileID: 428526002}
   - 114: {fileID: 428526001}
+  - 114: {fileID: 428526004}
   m_Layer: 0
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: friendly
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -177,6 +178,19 @@ MonoBehaviour:
   hasCurrentTouchRight: 0
   currentTouchLeft: 0
   currentTouchRight: 0
+--- !u!114 &428526004
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 11400004, guid: d2b570053a338514b869b07f8be6f47a,
+    type: 2}
+  m_PrefabInternal: {fileID: 1501482464}
+  m_GameObject: {fileID: 428526000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 307a9ff2f081f4b45996e9faf581d84b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HP: 5
 --- !u!58 &428526005
 CircleCollider2D:
   m_ObjectHideFlags: 0
