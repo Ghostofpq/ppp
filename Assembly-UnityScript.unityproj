@@ -46,8 +46,10 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\BlobScript.js" />
      <Compile Include="Assets\Scripts\ShipScript.js" />
      <Compile Include="Assets\Scripts\ShotScript.js" />
+     <Compile Include="Assets\Scripts\SpawnEnemiesScript.js" />
      <Compile Include="Assets\Scripts\WeaponScript.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

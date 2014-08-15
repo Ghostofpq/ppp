@@ -1,18 +1,18 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShipScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\WeaponScript.js">
     <Files>
-      <File FileName="Assets\Scripts\ShipScript.js" Line="110" Column="3" />
-      <File FileName="Assets\Scripts\ShipScript.js" Line="112" Column="2" />
-      <File FileName="Assets\Scripts\ShotScript.js" Line="11" Column="63" />
-      <File FileName="Assets\Scripts\WeaponScript.js" Line="8" Column="20" />
+      <File FileName="Assets\Scripts\ShipScript.js" Line="85" Column="17" />
+      <File FileName="Assets\Scripts\ShotScript.js" Line="9" Column="27" />
+      <File FileName="Assets\Scripts\WeaponScript.js" Line="4" Column="15" />
+      <File FileName="Assets\Scripts\BlobScript.js" Line="27" Column="3" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State expanded="True">
           <Node name="Assembly-UnityScript" expanded="True">
             <Node name="Scripts" expanded="True">
-              <Node name="ShipScript.js" selected="True" />
+              <Node name="WeaponScript.js" selected="True" />
             </Node>
           </Node>
         </State>

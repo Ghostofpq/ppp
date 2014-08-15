@@ -71,7 +71,7 @@ function Update () {
 	}else if(shooter==1){
 		weapon.deltaPos = Vector2(deltaX2, deltaY2);
 	} 
-	if(weapon.FireWeapon(false)){
+	if(weapon.FireWeapon()){
 		if(shooter==0){shooter=1;}
 		else if(shooter==1){shooter=0;}
 	}  

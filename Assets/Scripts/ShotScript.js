@@ -1,6 +1,8 @@
 ﻿#pragma strict
 
-var isEnemyShot = false;
+var isEnemyShot:boolean = false;
+var velocity:Vector2 = Vector2(0,0);
+var speedFactor:float = 3.0;
 
 function Start () {
 	// Kills the pew object in 3 seconds after loading it
@@ -8,7 +10,7 @@ function Start () {
 }
 
 function Update () {
-	transform.Translate(rigidbody2D.velocity * Time.deltaTime * 2);
+	transform.Translate(velocity * Time.deltaTime * speedFactor);
 	var animator:Animator = GetComponent("Animator");
 	animator.SetFloat("TimeLived" , (animator.GetFloat("TimeLived")+Time.deltaTime));
 }

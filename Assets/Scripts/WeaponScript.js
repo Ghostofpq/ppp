@@ -1,8 +1,8 @@
 ﻿#pragma strict
 
-var shootingRate:float = 0.5;
 var shootCooldown:float;
-var shotPrefab:Rigidbody2D; 
+var shotPrefab:Transform; 
+var shootingRate:float = 0.5;
 var deltaPos:Vector2 = Vector2(0,0);
 var teta:float = 0; 
 var speed:float = 1;
@@ -21,14 +21,18 @@ function CanAttack(){
 	return (shootCooldown <= 0);
 }
 
-function FireWeapon(isEnemy:boolean){
+function FireWeapon(){
 	if (CanAttack()){
     	shootCooldown = shootingRate;
     	// Création d'un objet copie du prefab
-      	var shotInstance : Rigidbody2D = Instantiate(shotPrefab, transform.position + deltaPos, Quaternion.identity);
-  		shotInstance.rigidbody2D.velocity = Vector2(speed * Mathf.Cos(teta), speed * Mathf.Sin(teta));
+      	var shotInstance : Transform = Instantiate(shotPrefab, transform.position + deltaPos, Quaternion.identity);
+  		
       	var shotscript:ShotScript = shotInstance.gameObject.GetComponent("ShotScript");
-      	shotscript.isEnemyShot = isEnemy;
+      	if(shotscript.isEnemyShot){
+  			shotscript.velocity = Vector2(-speed * Mathf.Cos(teta), speed * Mathf.Sin(teta));
+  		} else {
+  			shotscript.velocity = Vector2(speed * Mathf.Cos(teta), speed * Mathf.Sin(teta));
+  		}
       	return true; 	 	
     }
     return false; 	
