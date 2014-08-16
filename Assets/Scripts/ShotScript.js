@@ -19,7 +19,6 @@ function Update () {
 }
 
 function OnCollisionEnter2D(collision:Collision2D){
-	Debug.Log("COLLISION !!");
 	var healthScript:HealthScript;
 	if(collision.gameObject.tag=="enemy" && !isEnemyShot){
 		healthScript = collision.gameObject.GetComponent("HealthScript");
@@ -27,7 +26,8 @@ function OnCollisionEnter2D(collision:Collision2D){
 	}else if(collision.gameObject.tag=="friendly" && isEnemyShot){
 		healthScript = collision.gameObject.GetComponent("HealthScript");
 		healthScript.TakeDamage(1);
-	}else if(collisionsActivated){
+	}
+	if(collisionsActivated){
 		Destroy (gameObject); 
 	}
 }

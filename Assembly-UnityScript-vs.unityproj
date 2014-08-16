@@ -48,6 +48,7 @@
   <ItemGroup>
      <Compile Include="Assets\Scripts\BlobScript.js" />
      <Compile Include="Assets\Scripts\HealthScript.js" />
+     <Compile Include="Assets\Scripts\MenuScript.js" />
      <Compile Include="Assets\Scripts\ShipScript.js" />
      <Compile Include="Assets\Scripts\ShotScript.js" />
      <Compile Include="Assets\Scripts\SpawnEnemiesScript.js" />

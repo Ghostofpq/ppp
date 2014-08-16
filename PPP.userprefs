@@ -2,10 +2,9 @@
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\ShotScript.js">
     <Files>
-      <File FileName="Assets\Scripts\ShotScript.js" Line="19" Column="2" />
-      <File FileName="Assets\Scripts\WeaponScript.js" Line="28" Column="115" />
-      <File FileName="Assets\Scripts\SpawnEnemiesScript.js" Line="21" Column="19" />
-      <File FileName="Assets\Scripts\BlobScript.js" Line="9" Column="1" />
+      <File FileName="Assets\Scripts\ShotScript.js" Line="21" Column="52" />
+      <File FileName="Assets\Scripts\HealthScript.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\ShotScript.js" Line="33" Column="2" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">

@@ -50,7 +50,6 @@ function ResolveTouchRight(){
 	}			
 }
 
-
 function Update () {
 	var weapon:WeaponScript = GetComponent("WeaponScript");
 	ResolveTouch();	
@@ -110,3 +109,9 @@ function Update () {
 //    Debug.Log("Pos to go : "+posToGo+" from "+transform.position+"Velocity : " +velocity);
    	transform.Translate(Time.deltaTime * 10 * velocity);
 }
+
+function OnDestroy(){
+	Application.LoadLevel("menu");
+}
+
+
