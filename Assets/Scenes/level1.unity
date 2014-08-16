@@ -179,6 +179,7 @@ MonoBehaviour:
   hasCurrentTouchRight: 0
   currentTouchLeft: 0
   currentTouchRight: 0
+  end: 0
 --- !u!114 &428526004
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -264,6 +265,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 527717471}
   - 114: {fileID: 527717472}
+  - 114: {fileID: 527717473}
   m_Layer: 0
   m_Name: Scripts
   m_TagString: Untagged
@@ -297,6 +299,19 @@ MonoBehaviour:
   enemyPrefab: {fileID: 400000, guid: e63c71084115d2e4389104a304a3bf17, type: 2}
   spawnRate: 2
   spawnCooldown: 0
+--- !u!114 &527717473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 527717470}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24f095790e1b9fe419e8777737be19dc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  score: 0
+  activateScoreBoard: 0
 --- !u!1 &1136586081
 GameObject:
   m_ObjectHideFlags: 0

@@ -10,11 +10,12 @@ var hasCurrentTouchLeft:boolean;
 var hasCurrentTouchRight:boolean;
 var currentTouchLeft:int;
 var currentTouchRight:int;
-
+var end:boolean;
 function Start () {	
 	shooter=0;
 	hasCurrentTouchLeft=false;
 	hasCurrentTouchRight=false;
+	end=false;
 }
 
 function ResolveTouch(){
@@ -111,7 +112,9 @@ function Update () {
 }
 
 function OnDestroy(){
-	Application.LoadLevel("menu");
+	var scoreScript:ScoreScript = GameObject.Find("Scripts").GetComponent("ScoreScript");
+	scoreScript.activateScoreBoard=true;
 }
+
 
 
