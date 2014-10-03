@@ -42,7 +42,7 @@ function ResolveTouchRight(){
 	hasCurrentTouchRight=false;
 	for (var i = Input.touchCount-1; i >= 0; i--) {
 		if (Input.GetTouch(i).phase != TouchPhase.Ended) {
-			if(Input.GetTouch(i).position.x >1000){
+			if(Input.GetTouch(i).position.x > 600){
 				target = Camera.main.ScreenToWorldPoint(Input.GetTouch(i).position);
 				hasCurrentTouchRight=true;
 				break;

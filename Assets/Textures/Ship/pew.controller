@@ -72,7 +72,7 @@ State:
   m_Motions:
   - {fileID: 7400000, guid: 4e7fc19a5b4aba84ebabf88ee9c9f39b, type: 2}
   m_ParentStateMachine: {fileID: 110700000}
-  m_Position: {x: 48, y: 144, z: 0}
+  m_Position: {x: -12, y: 12, z: 0}
   m_IKOnFeet: 0
   m_Mirror: 0
   m_Tag: 
@@ -83,22 +83,20 @@ StateMachine:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_Name: Base Layer
-  m_DefaultState: {fileID: 110258731}
+  m_DefaultState: {fileID: 0}
   m_States:
-  - {fileID: 110258731}
   - {fileID: 110286204}
   m_ChildStateMachine: []
   m_ChildStateMachinePosition: []
   m_OrderedTransitions:
     data:
-      first: {fileID: 110286204}
+      first: {fileID: 0}
       second: []
     data:
-      first: {fileID: 110258731}
-      second:
-      - {fileID: 110100000}
-    data:
       first: {fileID: 0}
+      second: []
+    data:
+      first: {fileID: 110286204}
       second: []
   m_MotionSetCount: 1
   m_AnyStatePosition: {x: 24, y: -48, z: 0}

@@ -7,3 +7,7 @@ function TakeDamage(damage:int){
 		Destroy(gameObject);
 	}
 }
+
+function GetHP(){
+	return HP;
+}

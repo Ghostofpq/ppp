@@ -17,9 +17,7 @@ function Update () {
 	
 	
 	transform.Translate(velocity * Time.deltaTime * speedFactor);
-	if(transform.position.x < -6.5 || transform.position.x > 6.5){
-		Destroy (gameObject); 
-	}
+	
 	if(transform.position.y < -2.5){
 		transform.position.y = -2.5; 
 	}
@@ -30,4 +28,8 @@ function Update () {
 	var weapon:WeaponScript = GetComponent("WeaponScript");
 	weapon.deltaPos = Vector2(-0.3, -0.15);
 	weapon.FireWeapon();
+}
+
+function OnBecameInvisible(){
+	Destroy(gameObject);
 }

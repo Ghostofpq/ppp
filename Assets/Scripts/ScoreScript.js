@@ -1,10 +1,17 @@
 ﻿#pragma strict
 var score = 0;
-var activateScoreBoard = false;
+var activateScoreBoard;
+
+function Start () {	
+	activateScoreBoard = false;
+}
 
 function Add (point:int) {
 	score += point;
-	activateScoreBoard = false;
+}
+
+function GetScore() {
+	return score;
 }
 
 

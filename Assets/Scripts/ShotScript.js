@@ -35,6 +35,10 @@ function OnCollisionEnter2D(collision:Collision2D){
 	}
 	
 	if(collisionsActivated){
-		Destroy (gameObject); 
+		Destroy(gameObject); 
 	}
+}
+
+function OnBecameInvisible(){
+	Destroy(gameObject);
 }
